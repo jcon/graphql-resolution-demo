@@ -1,0 +1,19 @@
+{
+  "name": "@meetup/graphql-server",
+  "main": "server.js",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "nodemon": "latest"
+  },
+  "dependencies": {
+    "@apollo/gateway": "latest",
+    "@meetup/member": "0.0.0",
+    "apollo-server": "latest",
+    "graphql": "^15.0.0",
+    "@graphql-tools/merge": "latest"
+  }
+}
