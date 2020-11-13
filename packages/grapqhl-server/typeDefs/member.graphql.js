@@ -9,6 +9,8 @@ module.exports = gql`
   type Member {
     id: ID!
     name: String
+    firstName: String
+    lastName: String
     email: String
     photoUrl: String
   }
