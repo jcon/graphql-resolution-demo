@@ -3,7 +3,7 @@ const DataLoader = require('dataloader');
 const faker = require('faker');
 const { range, random } = require('lodash');
 
-const { DataService } = require('data-service');
+const { DataService } = require('@meetup/data-service');
 
 function fakeText (max) {
   const title = faker.hacker.phrase().toString().substring(0, max);

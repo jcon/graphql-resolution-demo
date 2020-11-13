@@ -3,7 +3,7 @@ const DataLoader = require('dataloader');
 const faker = require('faker');
 const { range } = require('lodash');
 
-const { DataService } = require('data-service');
+const { DataService } = require('@meetup/data-service');
 
 const members = range(1, 101).map(id => ({
   id: id.toString(),

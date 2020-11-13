@@ -1,5 +1,5 @@
 {
-  "name": "data-service",
+  "name": "@meetup/data-service",
   "version": "0.0.0",
   "main": "./index.js",
   "dependencies": {
