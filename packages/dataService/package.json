@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "main": "./index.js",
   "dependencies": {
-    "@apollo/federation": "latest",
-    "apollo-server": "latest",
-    "dataloader": "^2.0.0",
-    "graphql": "latest"
+    "lodash": "^4.17.19"
   }
 }
