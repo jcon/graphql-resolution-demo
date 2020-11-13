@@ -1,6 +1,5 @@
-const { memberService, memberLoader } = require('./service');
+const { memberService } = require('./service');
 
 module.exports = {
-  memberLoader,
   memberService
 };

@@ -1,6 +1,11 @@
-const { eventLoader } = require('@meetup/event');
-const { rsvpLoader } = require('@meetup/rsvp');
-const { memberLoader } = require('@meetup/member');
+const DataLoader = require('dataloader');
+const { eventService } = require('@meetup/event');
+const { rsvpService } = require('@meetup/rsvp');
+const { memberService } = require('@meetup/member');
+
+const eventLoader = () => new DataLoader(ids => eventService.batchGet(ids));
+const rsvpLoader = () => new DataLoader(ids => rsvpService.batchGet(ids));
+const memberLoader = () => new DataLoader(ids => memberService.batchGet(ids));
 
 const buildContext = ({ req }) => {
   if (process.env.DEBUG === 'true') {

@@ -1,4 +1,3 @@
-const DataLoader = require('dataloader');
 const faker = require('faker');
 const { range, random, flatten } = require('lodash');
 
@@ -36,9 +35,6 @@ class RsvpService extends DataService {
 
 const rsvpService = new RsvpService(rsvps);
 
-const rsvpLoader = () => new DataLoader(ids => rsvpService.batchGet(ids));
-
 module.exports = {
-  rsvpLoader,
   rsvpService
 };

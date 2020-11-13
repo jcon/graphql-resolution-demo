@@ -1,5 +1,4 @@
 
-const DataLoader = require('dataloader');
 const faker = require('faker');
 const { range } = require('lodash');
 
@@ -14,9 +13,6 @@ const members = range(1, 101).map(id => ({
 
 const memberService = new DataService('Member', 'id', members);
 
-const memberLoader = () => new DataLoader(ids => memberService.batchGet(ids));
-
 module.exports = {
-  memberLoader,
   memberService
 };

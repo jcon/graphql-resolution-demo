@@ -1,6 +1,5 @@
-const { rsvpService, rsvpLoader } = require('./service');
+const { rsvpService } = require('./service');
 
 module.exports = {
-  rsvpLoader,
   rsvpService
 };

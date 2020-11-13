@@ -1,6 +1,5 @@
-const { eventService, eventLoader } = require('./service');
+const { eventService } = require('./service');
 
 module.exports = {
-  eventLoader,
   eventService
 };

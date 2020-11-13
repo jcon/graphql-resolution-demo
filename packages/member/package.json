@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "@meetup/data-service": "0.0.0",
-    "dataloader": "^2.0.0",
     "faker": "^4.1.0",
     "lodash": "^4.17.19"
   }

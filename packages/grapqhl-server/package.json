@@ -14,6 +14,7 @@
     "@meetup/member": "0.0.0",
     "apollo-server": "latest",
     "graphql": "^15.0.0",
+    "dataloader": "^2.0.0",
     "@graphql-tools/merge": "latest"
   }
 }

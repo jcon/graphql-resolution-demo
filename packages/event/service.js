@@ -1,5 +1,4 @@
 
-const DataLoader = require('dataloader');
 const faker = require('faker');
 const { range, random } = require('lodash');
 
@@ -38,9 +37,6 @@ class EventService extends DataService {
 
 const eventService = new EventService(events);
 
-const eventLoader = () => new DataLoader(ids => eventService.batchGet(ids));
-
 module.exports = {
-  eventLoader,
   eventService
 };
