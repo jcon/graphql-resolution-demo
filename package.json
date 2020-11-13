@@ -1,0 +1,15 @@
+{
+  "name": "federation-demo",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "semistandard": "^14.2.0",
+    "standard": "^14.3.3"
+  }
+}
