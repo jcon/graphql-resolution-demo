@@ -18,7 +18,7 @@ class DataService {
 
   async batchGet (ids) {
     console.log(`${this.entity}Service.batchGet(${ids})`);
-    await delay(120, 140);
+    await delay(40, 60);
     return this.data.filter(obj => ids.includes(get(obj, this.idField)));
   }
 }

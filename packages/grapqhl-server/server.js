@@ -2,10 +2,12 @@ const { ApolloServer } = require('apollo-server');
 
 const typeDefs = require('./typeDefs');
 const resolvers = require('./resolvers');
+const { buildContext } = require('./context');
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  context: buildContext
 });
 
 server.listen(4000).then(({ url }) => {
