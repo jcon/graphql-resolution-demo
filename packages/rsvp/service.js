@@ -22,13 +22,13 @@ class RsvpService extends DataService {
 
   async getRsvpsForUser (userId) {
     console.log(`RsvpService.getRsvpsForUser(${userId})`);
-    await delay(15);
+    await delay(15, 20);
     return rsvps.filter(rsvp => rsvp.member.id === userId);
   }
 
   async getRsvpsForEvent (eventId) {
     console.log(`RsvpService.getRsvpsForEvent(${eventId})`);
-    await delay(15);
+    await delay(15, 20);
     return rsvps.filter(rsvp => rsvp.event.id === eventId);
   }
 }
